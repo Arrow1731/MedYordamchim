@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background-image: url(https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?semt=ais_hybrid&w=740);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.dailyfeeling {
+  text-align: center;
+}
+
+.dailyfeeling h2 {
+  font-size: 34px;
+}
+
+.dailyfeeling .card #mood {
+  padding: 5px 10px;
+  font-size: 20px;
+  border-radius: 15px;
+  margin-top: 30px;
+}
+
+.dailywater {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.dailywater .watercard h3 {
+  font-size: 34px;
+}
+
+.dailywater .enterywater_litr input {
+  padding: 5px 22px;
+  width: 100%;
+  max-width: 290px;
+  height: 50px;
+  font-size: 16px;
+}
+
+main {
+  text-align: center;
+  margin-top: 35px;
+}
+
+main .sleep_time h3 {
+  font-size: 32px;
+}
+
+main .sleep_time .sleep_mood {
+  margin-top: 30px;
+}
+
+main .sleep_time .sleep_mood input {
+  width: 100%;
+  max-width: 160px;
+  height: 30px;
+  padding: 15px;
+}
+
+.analitic_cards {
+  margin-top: 45px;
+  text-align: center;
+}
+
+.analitic_cards h4 {
+  font-size: 32px;
+}
+
+.analitic_cards .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 45px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.ring {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: conic-gradient(#ff2d55 0% 25%, #fff 25% 100%);
+  margin: 30px auto;
+}
+
+.ring::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 160px;
+  height: 160px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+
+/* Footer with nav */
+
+.container_nd{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+footer nav{
+    background: rgba(8, 86, 105, 0.651);
+    width: 100%;
+    height: 70px;
+
+    .nav_content{
+        .nav_list{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            a, li{
+                text-decoration: none;
+                list-style: none;
+                color: #fff;
+                font-size: 23px;
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+button{
+    width: 250px;
+    height: 40px;
+    background: blue;
+    border: none;
+    border-radius: 15px;
+    font-size: 17px;
+    margin-top: 23px;
+
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+/*  Responsive  */
+
+@media (max-width: 768px) {
+  .dailyfeeling h2,
+  .dailywater .watercard h3,
+  .analitic_cards h4,
+  main .sleep_time h3 {
+    font-size: 44px;
+  }
+
+  .analitic_cards .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ring {
+    width: 160px;
+    height: 160px;
+  }
+
+  .ring::before {
+    width: 120px;
+    height: 120px;
+    top: 20px;
+    left: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dailyfeeling h2,
+  .dailywater .watercard h3,
+  .analitic_cards h4,
+  main .sleep_time h3 {
+    font-size: 30px;
+  }
+
+  .ring {
+    width: 130px;
+    height: 130px;
+  }
+
+  .ring::before {
+    width: 90px;
+    height: 90px;
+    top: 20px;
+    left: 20px;
+  }
+}

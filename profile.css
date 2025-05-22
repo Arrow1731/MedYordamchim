@@ -1,0 +1,109 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        body {
+            background-image: url(https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?semt=ais_hybrid&w=740);
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .center_text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px 0;
+        }
+
+        .profile {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 20px;
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .profile img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            background-color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .info_customer h2 {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+
+        .info_customer span {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .details div {
+            margin-top: 15px;
+        }
+
+        .details p {
+            font-size: 16px;
+        }
+
+        .details a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        footer nav {
+            background: rgba(8, 86, 105, 0.85);
+            width: 100%;
+            height: 70px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+        }
+
+        .nav_content .nav_list ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100%;
+            list-style: none;
+        }
+
+        .nav_list a {
+            color: #fff;
+            font-size: 22px;
+            text-decoration: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            .profile {
+                padding: 15px;
+                border-radius: 15px;
+            }
+
+            .info_customer h2 {
+                font-size: 14px;
+            }
+
+            .info_customer span {
+                font-size: 12px;
+            }
+
+            .nav_list a {
+                font-size: 20px;
+            }
+        }

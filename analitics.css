@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  background-image: url(https://img.freepik.com/free-vector/blue-curve-background_53876-113112.jpg?semt=ais_hybrid&w=740);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Footer with nav */
+
+.container_nd{
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+footer nav{
+    background: rgba(8, 86, 105, 0.651);
+    width: 100%;
+    height: 70px;
+
+    .nav_content{
+        .nav_list{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            a, li{
+                text-decoration: none;
+                list-style: none;
+                color: #fff;
+                font-size: 23px;
+                padding-top: 10px;
+            }
+        }
+    }
+}
+
+button{
+    width: 250px;
+    height: 40px;
+    background: blue;
+    border: none;
+    border-radius: 15px;
+    font-size: 17px;
+    margin-top: 23px;
+
+    a{
+        text-decoration: none;
+        color: #fff;
+    }
+}
